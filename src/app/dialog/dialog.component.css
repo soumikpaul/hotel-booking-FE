@@ -1,0 +1,29 @@
+.hotelimg{
+    height: 300px;
+    width: 600px;
+    margin-left: 300px;
+    margin-top: 15px;
+
+}
+h3{
+    margin: -5px;
+    /* padding-right:10px; */
+    margin-left: 500px; 
+}
+
+button{
+    
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 600px;
+        font-size: 20px;
+        margin-top: auto;
+        border-radius: 8px;
+        margin-left: 300px;
+    
+}

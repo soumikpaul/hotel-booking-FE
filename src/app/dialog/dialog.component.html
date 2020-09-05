@@ -1,0 +1,28 @@
+<p>Details about this hotel!</p>
+
+<div >
+            <mat-card-header>
+                <!-- <mat-card-title>{{hotel.hotelName}}</mat-card-title> -->
+                <h3>Hotel Id :  {{hotel.id}}</h3>
+
+                <h3>Hotel Name :  {{hotel.hotelName}}</h3>
+                <br>
+                <h3>City :  {{hotel.location}}</h3>
+                <br>
+                <h3>Price :  {{hotel.price}}</h3>
+                <br>
+                <h3>Type of Rooms :  {{hotel.hotelType}}</h3>
+                <!-- <mat-card-subtitle>{{hotel.location}}</mat-card-subtitle> -->
+                <!-- <a mat-button [routerLink]="['/dialog', hotel.id]">{{hotel.hotelName}}</a> -->
+            </mat-card-header>
+            <img mat-card-image class="hotelimg" src="{{hotel.imgurl}}" alt="Photo of Hotel ">
+            <mat-card-content>
+                <!-- <p>
+                    One of the best hotels located in bangalore city
+                </p> -->
+            </mat-card-content>
+            <mat-card-actions>
+                <!-- <button mat-button [routerLink]="['/booking']">Book</button> -->
+                <button mat-button (click)="openBooking()">Book</button>
+            </mat-card-actions>
+   </div>

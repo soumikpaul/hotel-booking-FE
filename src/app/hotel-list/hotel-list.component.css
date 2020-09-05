@@ -1,0 +1,17 @@
+img{
+    height: 250px;
+    width: 390px;
+}
+button{
+    border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+        margin-top: auto;
+        border-radius: 8px;
+}

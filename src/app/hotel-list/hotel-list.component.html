@@ -1,0 +1,30 @@
+<p>hotel-list works!</p>
+
+<h2>Hotel List</h2>
+
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="32px" fxLayoutAlign="flex-start" class="boundary">
+    <ng-container *ngFor="let hotelVar of hotel">
+        <mat-card class="example-card" fxFlex="0 1 calc(33.3% - 32px)" fxFlex.lt-md="0 1 calc(50% - 32px)" fxFlex.lt-sm="100%">
+            <mat-card-header>
+                <!-- <mat-card-title>{{hotelVar.hotelName}}</mat-card-title> -->
+                <h2>{{hotelVar.location}}</h2>
+                <a mat-button [routerLink]="['/list', hotelVar.id]">{{hotelVar.hotelName}}</a>
+            </mat-card-header>
+            <img mat-card-image src={{hotelVar.imgurl}} alt="Photo of Hotel ">
+            <mat-card-content>
+                <p>
+                    One of the best hotels located in bangalore city
+                </p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="openBooking()">Book</button>
+                <!-- <button mat-button [routerLink]="['/list', hotelVar.id]">Book</button> -->
+            </mat-card-actions>
+        </mat-card>
+    </ng-container>
+   </div>
+   <mat-paginator [pageSizeOptions]="[ 9,3,15,25]" showFirstLastButtons></mat-paginator>
+
+   
+   
+   
